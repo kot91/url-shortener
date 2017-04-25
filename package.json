@@ -1,6 +1,6 @@
 {
   "name": "url-shortener",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A url shortener that takes a valid url, stores it in mongodb and returns a url that will redirect to the original",
   "main": "server.js",
   "repository": "",

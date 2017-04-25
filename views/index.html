@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" ng-app>
+  <head>
+    <title>URL Shortener</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <h1>URL Shortener by Justin Thompson</h1>
+    <div>
+        <b>Takes url, returns JSON of shortened url that redirects to original url</b>
+      <h2>Example creation</h2>
+      <span class="links">https://little-url.herokuapp.com/new/https://www.google.com</span><br/>
+      <span class="links">https://little-url.herokuapp.com/new/http://foo.com:80</span><br/>
+      <b>Example creation output:</b><br/>
+      <span class="links">{ "original_url":"http://foo.com:80", "short_url":"https://jt-urlshortener.herokuapp.com/8170" }</span>
+      
+      <b>Usage:</b><br/>
+      <span class="links">https://little-url.herokuapp.com/2871</span><br/>
+      <b>Will redirect to:</b>
+      <span class="links">https://google.com/</span>
+    </div>
+  </body>
+</html>

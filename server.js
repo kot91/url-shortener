@@ -3,7 +3,7 @@ var mongo = require('mongodb');
 var routes = require('./routes/routes.js');
 var urlshort = require('./urlshortener/urlshortener.js');
 require ('dotenv').config({
-    silent: true,
+    silent: true, //for heroku; rafase282 recommended to make dotenv work properly with it.
     path: './config.env'
 });
 

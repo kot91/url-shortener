@@ -4,7 +4,7 @@ var routes = require('./routes/routes.js');
 var urlshort = require('./urlshortener/urlshortener.js');
 require ('dotenv').config({
     silent: true, //for heroku; rafase282 recommended to make dotenv work properly with it.
-    path: './config.env'
+    path: './node_modules/config.env'
 });
 
 

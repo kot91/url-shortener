@@ -15,7 +15,7 @@ mongo.MongoClient.connect('mongodb://ethicmeta-url-shortener-4755979', function 
     else
     console.log('connected to mongoDB');
     
-    
+    //use the views folder as a static dir
     app.use(express.static(process.cwd() + '/views'));
     
     app.use(function(req, res, next) {
@@ -25,12 +25,14 @@ mongo.MongoClient.connect('mongodb://ethicmeta-url-shortener-4755979', function 
         next();
     });
     
+    //create the collection with basic properties
     db.createCollection("sites", {
         capped: true,
         size: 5242880,
         max: 5000
     });
     
+    //need to send app and db to the module.exports listed below
     routes(app, db);
     urlshort(app, db);
     

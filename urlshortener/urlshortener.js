@@ -1,4 +1,3 @@
-
 module.exports = function(app,db){
     //lookup url, attempt to redirect
     app.route('/:url')

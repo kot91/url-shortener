@@ -10,7 +10,7 @@ require ('dotenv').config({
 
 
 var app = express();
-mongo.MongoClient.connect('mongodb://ethicmeta-url-shortener-4755979', function (err, db){
+mongo.MongoClient.connect(process.env.MONGOLAB_URI || 'mongodb://ethicmeta-url-shortener-4755979', function (err, db){
     if (err) throw err;
     else
     console.log('connected to mongoDB');
